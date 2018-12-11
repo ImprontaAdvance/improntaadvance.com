@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Impronta Advance srl</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advance</title>
+    <meta name="description" content="Agenzia Digital di Roma" />
+
     <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat');
+        * {
+            box-sizing: border-box;
+        }
+        html,
         body {
-            background: #000;
+            margin: 0;
+            padding: 0;
+        }
+        main {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 20px 30px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            background-color: black;
+            z-index: 0;
+        }
+        .head {
+            margin: auto;
+            width: 100%;
+            max-width: 800px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .logo {
+            flex: 2;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .content {
+            flex: 1;
+        }
+        footer {
+            display: block;
+        }
+        footer ul {
+            display: block;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        footer li {
+            display: inline-block;
+            font-size: 14px;
+            color: grey;
+        }
+        footer a {
+            color: grey;
+            text-decoration: none;
+            transition: color ease .3s;
+        }
+        footer a:hover {
+            color: white;
+        }
+        img {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+        }
+        .title {
+            text-transform: uppercase;
+            color: #ededed;
+            font-size: 40px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        .group {
+            text-decoration: none;
+            font-size: 20px;
+            color: grey;
+            transition: color ease .3s;
+        }
+        .group:hover {
+            color: white;
+        }
+        @media (max-width: 480px) {
+            .logo {
+                width: 80%;
+            }
+            .title {
+                font-size: 30px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Impronta Advance srl</h1>
+
+    <main>
+        <div class="head">
+            <div class="logo">
+                <img src="advance.svg" alt="Advance" />
+            </div>
+            <div class="content">
+                <h3 class="title">Soon online</h3>
+                <a class="group" href="https://www.improntaadv.com">Visita il sito del Gruppo&nbsp;Impronta</a>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li>P.IVA/C.F.: 12699351008 - </li>
+                <li><a href="mailto:info@improntaadvance.com">Contatti</a> - </li>
+                <li><a href="mailto:jobs@improntaadvance.com">Jobs</a></li>
+            </ul>
+        </footer>
+    </main>
+
 </body>
 </html>
